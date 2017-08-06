@@ -4,6 +4,17 @@
 #获取北京今明后三天天气
 import urllib2
 from bs4 import BeautifulSoup
+
+#面向过程
+#url='http://jinan.tianqi.com/15/'
+#a=urllib2.urlopen(url).read()
+#soup=BeautifulSoup(a,'html.parser')
+#b=soup.find_all('div',class_="table_day15")
+#for c in b[0:3]:
+    #print c.get_text()
+#x =raw_input('  ')
+
+#面向对象
 class huoqutianqi():
     def __init__(self, url):
         self.url = url
